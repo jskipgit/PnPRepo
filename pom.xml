@@ -35,10 +35,6 @@
         <!-- auto config for spring stuff -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
@@ -70,6 +66,11 @@
             <artifactId>springfox-swagger2</artifactId>
             <version>2.6.0</version>
         </dependency>
+        <!-- Spring web stuff (mvc controller etc) -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
         <!-- Jsp Tags -->
         <dependency>
             <groupId>taglibs</groupId>
@@ -96,8 +97,6 @@
     </dependencies>
 
     <properties>
-        <start-class>com.ironyard.Application</start-class>
-
         <java.version>1.8</java.version>
     </properties>
 
@@ -108,16 +107,16 @@
         <plugins>
 
             <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+            <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-dependency-plugin</artifactId>
-                <version>2.4</version>
-                <executions>
-                    <execution>
-                        <id>copy-dependencies</id>
-                        <phase>package</phase>
-                        <goals><goal>copy-dependencies</goal></goals>
-                    </execution>
-                </executions>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <version>2.10.4</version>
+                <configuration>
+                    <!-- look online for options like specify directory-->
+                </configuration>
             </plugin>
         </plugins>
     </build>
