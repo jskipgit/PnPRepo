@@ -54,7 +54,6 @@ public class Application {
                 .description("This is where you can access the users data model and perform CRUD operations on them." + "\n" +
                         "test token = hGsZ9J4kvxbBNRqGSEM7JtfDlSU/qh8Z")
                 .termsOfServiceUrl("n/a")
-                .contact("Tom Cilano")
                 .license("Apache License Version 2.0")
                 .licenseUrl("")
                 .version(".1")
@@ -85,7 +84,6 @@ public class Application {
                 .title("Message API")
                 .description("This is where you can perform CRUD operations on  'messages' by Id------->Here is a testing token:  hGsZ9J4kvxbBNRqGSEM7JtfDlSU/qh8Z")
                 .termsOfServiceUrl("n/a")
-                .contact("Tom Cilano")
                 .license("Apache License Version 2.0")
                 .licenseUrl("")
                 .version(".1")
@@ -114,7 +112,6 @@ public class Application {
         return new ApiInfoBuilder()
                 .title("Story API")
                 .description("This is where you can perform CRUD operations on 'Story' by id ------->Here is a testing token:  hGsZ9J4kvxbBNRqGSEM7JtfDlSU/qh8Z")
-                .contact("TomCilano")
                 .license("")
                 .build();
 
