@@ -97,6 +97,8 @@
     </dependencies>
 
     <properties>
+        <!-- The main class to start by executing java -jar -->
+        <start-class>com.ironyard.Application</start-class>
         <java.version>1.8</java.version>
     </properties>
 
@@ -104,7 +106,13 @@
     <build>
         <!-- will create a jar file named app.jar -->
         <finalName>app</finalName>
+        <plugins>
 
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
     </build>
 
     <repositories>
