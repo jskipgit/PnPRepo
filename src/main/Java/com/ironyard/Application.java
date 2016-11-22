@@ -23,7 +23,8 @@ import static springfox.documentation.builders.PathSelectors.regex;
 public class Application {
 
     public static void main(String[] args) {
-        
+
+        // test
         SpringApplication.run(Application.class);
 
     }
