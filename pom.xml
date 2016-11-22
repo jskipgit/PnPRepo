@@ -70,11 +70,6 @@
             <artifactId>springfox-swagger2</artifactId>
             <version>2.6.0</version>
         </dependency>
-        <!-- Spring web stuff (mvc controller etc) -->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
         <!-- Jsp Tags -->
         <dependency>
             <groupId>taglibs</groupId>
