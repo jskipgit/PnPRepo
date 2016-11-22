@@ -3,7 +3,6 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>test</groupId>
     <artifactId>spring</artifactId>
-    <packaging>jar</packaging>
 
     <!-- we are extending from this project POM which means we get
      everything that this pom has (inheritance) -->
@@ -97,9 +96,7 @@
     </dependencies>
 
     <properties>
-        <sourceDirectory>src/main/java</sourceDirectory>
         <!-- The main class to start by executing java -jar -->
-        <start-class>com.ironyard.Application</start-class>
         <java.version>1.8</java.version>
     </properties>
 
